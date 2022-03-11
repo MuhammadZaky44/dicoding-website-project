@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap'); /* font-family: 'Merriweather', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* font-family: 'Montserrat', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    min-width: 30%;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+
+}
+
+section > h3 {
+    text-align: center;
+}
+
+section table {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+tr > td {
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+table {
+    padding-top: 15px;
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+article > * {
+    margin: 8px;
+    padding: 5px;
+}
+
+nav {
+    background-color: #398AB9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+footer {
+    /* background-color: #D8D2CB; */
+    color: white;
+    background-color: #2F3A8F;
+    padding: 15px;
+    margin: 8px;
+}
+
+footer h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+footer > p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    padding-top: 25px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu-container{
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-container > li {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    position: relative;
+    border-radius: 15px;
+}
+
+.menu-container li a {
+    text-decoration: none;
+}
+
+.menu-container > li > ul {
+    list-style: none;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.menu-container li:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile-img {
+    padding: 10px;
+    text-align: center;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #072227;
+    text-align: left;
+    color: white;
+} 
+
+#dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+}
+
+#dropdown li {
+    padding: 10px 15px;
+}
+
+#dropdown li a {
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+}
+
+#dropdown.active {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
